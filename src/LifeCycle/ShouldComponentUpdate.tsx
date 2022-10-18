@@ -1,5 +1,3 @@
-/** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react";
 import { Component } from "react";
 
 interface Props {
@@ -38,7 +36,7 @@ export default class ShouldComponentUpdate extends Component<Props> {
     console.log("render");
 
     return (
-      <div css={css({ border: "1px solid white", padding: "0 0 20px 0" })}>
+      <div className="p-4 border-solid border border-white">
         <h2>Child Component</h2>
         <div>
           props.canRerender (= shouldComponentUpdate 메서드 반환값):{" "}
