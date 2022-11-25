@@ -5,6 +5,7 @@ import Context from "./Context";
 import LifeCycle from "./LifeCycle";
 import ErrorBoundaries from "./ErrorBoundaries";
 import Ref from "./Ref";
+import HOC from "./HOC";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Link to="/lifecycle">LifeCycle</Link>
           <Link to="/errorboundary">ErrorBoundaries</Link>
           <Link to="/ref">Ref</Link>
+          <Link to="/hoc">HOC</Link>
         </nav>
       </header>
 
@@ -26,6 +28,7 @@ function App() {
           <Route path="/lifecycle" element={<LifeCycle />} />
           <Route path="/errorboundary" element={<ErrorBoundaries />} />
           <Route path="/ref" element={<Ref />} />
+          <Route path="/hoc" element={<HOC />} />
         </Routes>
       </main>
     </>
